@@ -1,0 +1,10 @@
+.movies-container {
+}
+
+.movies-container .add-movie-wrapper {
+  margin: 16px;
+}
+
+.movies-container .movies-box {
+  display: flex;
+}

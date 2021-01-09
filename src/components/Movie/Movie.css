@@ -1,0 +1,43 @@
+.movie-card {
+  width: 500px;
+  min-width: 500px;
+  height: 550px;
+  border: 1px solid black;
+  margin: 16px;
+}
+
+.movie-card .movie-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0790e6;
+}
+
+.movie-card .movie-header button {
+  padding: 4px 16px;
+}
+
+.movie-card h3 {
+  color: #fff;
+  font-size: 26px;
+  padding: 8px;
+}
+
+.movie-card small {
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.movie-card p {
+  padding: 16px;
+}
+
+.movie-card .movie-image {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-card .movie-image img {
+  height: 300px;
+}
