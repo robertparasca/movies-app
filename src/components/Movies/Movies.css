@@ -7,4 +7,5 @@
 
 .movies-container .movies-box {
   display: flex;
+  flex-wrap: wrap;
 }

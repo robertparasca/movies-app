@@ -8,6 +8,8 @@ function Movie({ movie, deleteMovie }) {
   };
 
   const generateStars = function (rating) {
+    if (rating === 0) return "No stars";
+
     const array = new Int8Array(rating);
 
     return array.reduce(function (acc) {

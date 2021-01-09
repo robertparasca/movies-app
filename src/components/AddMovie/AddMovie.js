@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./AddMovie.css";
 
-function AddMovie() {
+function AddMovie({ addMovie }) {
   const [form, setForm] = useState({
     name: "",
     rating: 0,
@@ -11,8 +11,14 @@ function AddMovie() {
   });
 
   const saveMovie = function (event) {
-    console.log(form);
     event.preventDefault();
+    addMovie(form);
+    setForm({
+      name: "",
+      rating: 0,
+      description: "",
+      image: "",
+    });
   };
 
   const onChange = function (event) {
@@ -38,19 +44,19 @@ function AddMovie() {
         </div>
         <div className="form-item">
           <label htmlFor="description">Description:</label>
-          {/* <input
+          <input
             id="description"
             name="description"
             type="text"
             value={form.description}
             onChange={onChange}
-          /> */}
-          <textarea
+          />
+          {/* <textarea
             name="description"
             id="description"
             cols="30"
             rows="10"
-          ></textarea>
+          ></textarea> */}
         </div>
         <div className="form-item">
           <label htmlFor="rating">Rating:</label>
